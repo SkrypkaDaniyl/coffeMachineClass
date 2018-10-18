@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,105 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coffeMachineClass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-UD-HQq">
+                                <rect key="frame" x="78" y="357" width="219" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="InA-hX-HEU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dl257_y_compact_me_fronte_grigia.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="mxO-k1-M2o">
+                                <rect key="frame" x="41" y="76" width="292" height="238"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uzj-Zm-FLe">
+                                <rect key="frame" x="217" y="459" width="142" height="30"/>
+                                <state key="normal" title="Make Esspresso"/>
+                                <connections>
+                                    <action selector="makeEsspressoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WN3-Bd-6PP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqV-Lt-yaT">
+                                <rect key="frame" x="16" y="459" width="129" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="gc8-op-Vf7"/>
+                                </constraints>
+                                <state key="normal" title="Make Americano"/>
+                                <connections>
+                                    <action selector="makeAmericanoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vAe-OV-ez0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqY-ZA-qDT">
+                                <rect key="frame" x="23" y="577" width="58" height="30"/>
+                                <state key="normal" title="add Milk"/>
+                                <connections>
+                                    <action selector="addMilkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CZ9-kb-IXY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJK-2B-Tf7">
+                                <rect key="frame" x="102" y="577" width="71" height="30"/>
+                                <state key="normal" title="add Water"/>
+                                <connections>
+                                    <action selector="addWaterButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mpP-Vg-dQQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2x-bM-61O">
+                                <rect key="frame" x="286" y="577" width="65" height="30"/>
+                                <state key="normal" title="Clean Lot"/>
+                                <connections>
+                                    <action selector="cleanLotButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAk-hf-B7a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0E-WB-dVb">
+                                <rect key="frame" x="189" y="577" width="76" height="30"/>
+                                <state key="normal" title="add Coffee"/>
+                                <connections>
+                                    <action selector="addCoffeeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vyk-eE-fUa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uzj-Zm-FLe" secondAttribute="trailing" constant="16" id="3TJ-pl-ZN0"/>
+                            <constraint firstItem="hJK-2B-Tf7" firstAttribute="leading" secondItem="hqY-ZA-qDT" secondAttribute="trailing" constant="21" id="5D4-dg-rK0"/>
+                            <constraint firstItem="mxO-k1-M2o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="41" id="5Qc-m0-Xhb"/>
+                            <constraint firstItem="gaJ-UD-HQq" firstAttribute="top" secondItem="mxO-k1-M2o" secondAttribute="bottom" constant="43" id="AGF-Lc-kfu"/>
+                            <constraint firstItem="hJK-2B-Tf7" firstAttribute="baseline" secondItem="D0E-WB-dVb" secondAttribute="baseline" id="B0n-d2-0Re"/>
+                            <constraint firstItem="Uzj-Zm-FLe" firstAttribute="leading" secondItem="KqV-Lt-yaT" secondAttribute="trailing" constant="72" id="CB7-CH-vbp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Uzj-Zm-FLe" secondAttribute="bottom" constant="178" id="HMf-q5-gPk"/>
+                            <constraint firstItem="hqY-ZA-qDT" firstAttribute="top" secondItem="KqV-Lt-yaT" secondAttribute="bottom" constant="88" id="HOZ-Xi-1zl"/>
+                            <constraint firstItem="P2x-bM-61O" firstAttribute="leading" secondItem="D0E-WB-dVb" secondAttribute="trailing" constant="21" id="Ikt-91-WbS"/>
+                            <constraint firstItem="KqV-Lt-yaT" firstAttribute="top" secondItem="gaJ-UD-HQq" secondAttribute="bottom" constant="37" id="PKn-ae-Uac"/>
+                            <constraint firstItem="D0E-WB-dVb" firstAttribute="baseline" secondItem="P2x-bM-61O" secondAttribute="baseline" id="eK7-uW-UvK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mxO-k1-M2o" secondAttribute="trailing" constant="42" id="fZE-Z5-pIJ"/>
+                            <constraint firstItem="D0E-WB-dVb" firstAttribute="leading" secondItem="hJK-2B-Tf7" secondAttribute="trailing" constant="16" id="ipN-l1-911"/>
+                            <constraint firstItem="hqY-ZA-qDT" firstAttribute="baseline" secondItem="hJK-2B-Tf7" secondAttribute="baseline" id="l7z-PB-eK5"/>
+                            <constraint firstItem="mxO-k1-M2o" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="pLs-ab-v6e"/>
+                            <constraint firstItem="Uzj-Zm-FLe" firstAttribute="top" secondItem="gaJ-UD-HQq" secondAttribute="bottom" constant="37" id="rvV-fj-6uh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KqV-Lt-yaT" secondAttribute="bottom" constant="178" id="sQM-S6-QtJ"/>
+                            <constraint firstItem="KqV-Lt-yaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="v1t-0J-MCM"/>
+                            <constraint firstItem="hqY-ZA-qDT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="wGK-Mx-Ca8"/>
+                            <constraint firstItem="gaJ-UD-HQq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="wcj-JG-6eL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gaJ-UD-HQq" secondAttribute="trailing" constant="78" id="yOj-Fs-CYm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="screenLabel" destination="gaJ-UD-HQq" id="1vO-Bv-App"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="146.17691154422789"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dl257_y_compact_me_fronte_grigia.jpg" width="1100" height="1100"/>
+    </resources>
 </document>

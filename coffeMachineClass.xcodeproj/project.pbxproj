@@ -12,6 +12,8 @@
 		847FF6E9216EFD6400C08AB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847FF6E7216EFD6400C08AB2 /* Main.storyboard */; };
 		847FF6EB216EFD7C00C08AB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847FF6EA216EFD7C00C08AB2 /* Assets.xcassets */; };
 		847FF6EE216EFD7C00C08AB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847FF6EC216EFD7C00C08AB2 /* LaunchScreen.storyboard */; };
+		847FF6F82176490600C08AB2 /* machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847FF6F72176490600C08AB2 /* machine.swift */; };
+		84EA8BC62177EFDC00468929 /* dl257_y_compact_me_fronte_grigia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84EA8BC52177EFDC00468929 /* dl257_y_compact_me_fronte_grigia.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		847FF6EA216EFD7C00C08AB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		847FF6ED216EFD7C00C08AB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847FF6EF216EFD7C00C08AB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847FF6F72176490600C08AB2 /* machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = machine.swift; sourceTree = "<group>"; };
+		84EA8BC52177EFDC00468929 /* dl257_y_compact_me_fronte_grigia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dl257_y_compact_me_fronte_grigia.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +58,10 @@
 		847FF6E2216EFD6400C08AB2 /* coffeMachineClass */ = {
 			isa = PBXGroup;
 			children = (
+				84EA8BC52177EFDC00468929 /* dl257_y_compact_me_fronte_grigia.jpg */,
 				847FF6E3216EFD6400C08AB2 /* AppDelegate.swift */,
 				847FF6E5216EFD6400C08AB2 /* ViewController.swift */,
+				847FF6F72176490600C08AB2 /* machine.swift */,
 				847FF6E7216EFD6400C08AB2 /* Main.storyboard */,
 				847FF6EA216EFD7C00C08AB2 /* Assets.xcassets */,
 				847FF6EC216EFD7C00C08AB2 /* LaunchScreen.storyboard */,
@@ -125,6 +131,7 @@
 				847FF6EE216EFD7C00C08AB2 /* LaunchScreen.storyboard in Resources */,
 				847FF6EB216EFD7C00C08AB2 /* Assets.xcassets in Resources */,
 				847FF6E9216EFD6400C08AB2 /* Main.storyboard in Resources */,
+				84EA8BC62177EFDC00468929 /* dl257_y_compact_me_fronte_grigia.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				847FF6E6216EFD6400C08AB2 /* ViewController.swift in Sources */,
+				847FF6F82176490600C08AB2 /* machine.swift in Sources */,
 				847FF6E4216EFD6400C08AB2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
